@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="">
+    <block wx:for="{{person}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+      <view class="i-for">
+        <view class="i-left">姓名：{{item.name}}</view>
+        <view class="i-left">姓别：{{item.sex}}</view>
+      
+      <view class="i-for2">
+        <view class="i-left">区域选择:</view>
+        <picker bindchange="bindPickerChange" value="{{areaIndex}}" data-current="{{idx}}" range="{{area}}" data-prearea="{{item.come}}">
+          <view class="i-left">
+            <input value="{{area[areaIndex[idx]]}}" disabled />
+          </view>
+        </picker>
+      </view>
+      </view>
+
+
+    </block>
+
+  </view>
+</view>

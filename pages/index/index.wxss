@@ -1,0 +1,21 @@
+/**index.wxss**/
+.i-for{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  border: 1px solid #eee;
+}
+
+.i-for2{
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  
+}
+
+.i-left{
+  padding-bottom: 5px;
+  width:50%;
+  text-align: left;
+}
+
